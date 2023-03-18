@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <script src="script/index.js" defer></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+
+        <tbody id="contactConteiner"></tbody>
+    </table>
+
+    <form id="contactForm" class="form">
+        <input type="text" name="name" id="nameInput" class="formInput">
+        <input type="text" name="surname" id="surnameInput" class="formInput">
+        <input type="text" name="phone" id="phoneInput" class="formInput">
+        <button id="addContBtn">Add Contact</button>
+    </form>
+
+    <script id="contactTemp" type="text/template">
+        <tr class="contactItem">
+            <td>{{name}}</td>
+            <td>{{surname}}</td>
+            <td>{{phone}}</td>
+            <td><span><button type="button" class="deleteBtn"></button></span></td>
+        </tr>
+    </script>
+</body>
+
+
+
+</html>
